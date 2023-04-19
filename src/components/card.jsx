@@ -3,10 +3,11 @@ import React from "react";
 function Card(props) {
     return(
         <div className="card">
-            <img src={props.imgSrc}/>
-            <h3>{props.Name}</h3>
-            <p>ph no: {props.PhoneNo}</p>
-            <p>Email: {props.Email}</p>
+            <img src = {props.cardContent.imgSrc}/>
+            <h3> {props.cardContent.PlaceName}</h3>
+            <p>{props.cardContent.PlaceDescription}</p>
+            
+            
         </div>
     )
 }
