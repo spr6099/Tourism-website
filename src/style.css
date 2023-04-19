@@ -30,6 +30,12 @@ header .logo{
     padding: 6px 12px;
     border-radius: 5px;
 }
+.nightMode{
+    background-color: blue;
+}
+.dayMode{
+    background-color: blueviolet;
+}
 ul {
     list-style: none;
     margin: 0;
@@ -55,4 +61,14 @@ footer {
     background-color: lightseagreen;
     padding: 20px;
     text-align: center;
+}
+.card{
+    margin: 10px;
+}
+.card img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
 }
