@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Card(props) {
-    return(
-        <div className="card">
-            <img src = {props.cardContent.imgSrc}/>
-            <h3> {props.cardContent.PlaceName}</h3>
-            <p>{props.cardContent.PlaceDescription}</p>
-            
-            
-        </div>
-    )
+
+  let [btnText, setBtnText] = useState("Add to favourites");   //useState
+  let [className, setClassname] = useState();
+
+  function addToFavourite() {
+    setBtnText((prevState) => {
+      if (prevState == "Add to favourite") {
+        return "Added to favourite";
+      } else {
+        return "Add to favourite";
+      }
+    });
+
+    setClassname((prevState) => {
+      if (prevState == " ") {
+        return "active"; //.active ->button  bgColor: red;
+      } else {
+        return " ";
+      }
+    });
+  }
+  return (
+    <div className={`card ${className}`}>
+      <img src={props.cardContent.Image} />
+      <h3> {props.cardContent.Place}</h3>
+      <p>{props.cardContent.Description}</p>
+      <button onClick={addToFavourite}>{btnText}</button>
+    </div>
+  );
 }
 
-export default Card
+export default Card;

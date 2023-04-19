@@ -3,13 +3,13 @@ let cardData = [
     imgSrc:
     "https://images.unsplash.com/photo-1580818135730-ebd11086660b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=857&q=80",
     PlaceName: "Munnar",
-    PlaceDescription: " Munnar is a town and hill station in the Idukki district of the southwestern Indian state of Kerala. ",
+    PlaceDescription: " Munnar is a town and hill station in the Idukki district of the of Kerala. ",
   },
   {
     imgSrc:
       "https://images.unsplash.com/photo-1602072254265-3d32678fe9c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
     PlaceName: "Kovalam",
-    PlaceDescription: "Kovalam is an area of Trivandrum City in Kerala, India, located around 17 km south of the city cente"
+    PlaceDescription: "Kovalam is an area of TVM  in Kerala, located around 17 km of the city "
   },
   {
     imgSrc:

@@ -11,9 +11,9 @@ function App() {
     return (
       <Card
         cardContent={{
-          imgSrc: cardItem.imgSrc,
-          PlaceName: cardItem.PlaceName,
-          PlaceDescription: cardItem.PlaceDescription,
+          Image: cardItem.imgSrc,
+          Place: cardItem.PlaceName,
+                Description: cardItem.PlaceDescription,
         }}
       />
     );
@@ -23,10 +23,24 @@ function App() {
     <div>
       <Header />
       <Hero />
-      <div className="card-container">{result}</div>
-
+      <div className="container">
+      <div className="card-container">
+        <h2>Destinations</h2>
+      
+        {result}
+       
+        
+        </div>
+        <div>
+        <aside>
+          <h2>Favourites</h2>
+        </aside>
+        </div>
+        </div>
+        
+        
       <Footer />
-    </div>
+   </div>
   );
 }
 
