@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 function Card(props) {
 
-  let [btnText, setBtnText] = useState("Add to favourites");   //useState
-  let [className, setClassname] = useState();
+  let [btnText, setBtnText] = useState("Add to favourite");   //useState
+  let [className, setClassname] = useState(" ");
 
   function addToFavourite() {
     setBtnText((prevState) => {
